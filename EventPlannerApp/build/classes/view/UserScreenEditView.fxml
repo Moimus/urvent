@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:id="rootPane" prefHeight="720" prefWidth="1280" styleClass="rootPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.UserScreenEditViewModel">
+    <stylesheets>
+        <URL value="@/design/Style.css"/>
+    </stylesheets>
+    <content>
+    <VBox>
+        <children>
+            <VBox styleClass="topBar"  >
+                <children>
+                    <Label styleClass="h1">My Account</Label>
+                    <VBox>
+                        <Button styleClass="basicButton" fx:id="homeBtn">
+                            <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" preserveRatio="true">
+                                <image>
+                                  <Image url="img/baseline_home_black_18dp.png" />
+                                </image>
+                              </ImageView>
+                            </graphic>
+                        </Button>
+                    </VBox>
+                </children>
+            </VBox>
+            <VBox styleClass="vBoxList">
+                <children>
+                    <ImageView fx:id="profileImg" styleClass="profileImage">
+                        <image>
+                        </image>
+                    </ImageView>
+                    <Label styleClass="h2" fx:id="usermailLbl">UserMail</Label>
+                    <TextField styleClass="basicTextField" fx:id="usernameTxtFld">Username</TextField>
+                    <TextField styleClass="basicTextField" fx:id="userDescrTxtFld">User description goes here</TextField>
+                    <!--<Label styleClass="h1"  layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="Lbl" >A h1 Text</Label>
+                    <Label styleClass="h2"  layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="Lbl2" >A h2 Text</Label>
+                    <Label styleClass="h3"  layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="Lbl3" >A h3 Text</Label>-->
+                </children>
+            </VBox>
+            <Button fx:id="saveBtn" styleClass="basicButtonDark">
+                Save
+            </Button>
+            <Button fx:id="cancelBtn" styleClass="basicButtonDark">
+                Cancel
+            </Button>
+        </children>
+    </VBox>
+    </content>
+</ScrollPane>

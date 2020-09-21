@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02.11.2019, 12:52:26
+    Author     : Hendrik
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+.rootPane
+{
+    -fx-background-color: #FFFFFF;
+    -fx-min-width: 1280;
+    -fx-min-height: 720;
+}
+
+.topBar
+{
+    -fx-background-color: #c6ff00;
+    -fx-min-width: 1280;
+    -fx-min-height: 56;
+    -fx-padding: 8;
+}
+
+.vBoxList
+{
+    -fx-padding : 8;
+    -fx-max-width: 720; 
+}
+
+.hBoxList
+{
+    -fx-spacing: 8;
+}
+
+.h1
+{
+   -fx-font-size : 400%;
+   -fx-font-family: 'Source Code Pro', monospace;
+   -fx-font-weight: 900;
+}
+
+.h2
+{
+   -fx-font-size : 300%;
+   -fx-font-family: 'Source Code Pro', monospace;
+}
+
+.h3
+{
+   -fx-font-size : 200%;
+   -fx-font-family: 'Source Code Pro', monospace;
+}
+
+.textBlockLong
+{
+   -fx-font-size : 150%;
+   -fx-font-family: 'Source Code Pro', monospace;
+}
+
+.profileImage
+{
+    -fx-margin-top: 8;
+    -fx-margin-bottom: 8;
+}
+
+.basicButton
+{
+    -fx-border-style: none;
+    -fx-border-color: none;
+    -fx-border-radius: 0;
+    -fx-background-insets: 0,0,0;
+    -fx-background-radius: 10,10,0;
+    -fx-padding: 16;
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: 'Source Code Pro', monospace;
+    -fx-alignment: CENTER;
+}
+
+.basicButtonDark
+{
+    -fx-border-style: none;
+    -fx-border-color: none;
+    -fx-background-insets: 0,0,0;
+    -fx-background-radius: 0,0,0;
+    -fx-padding: 16;
+    -fx-background-color: #222222;
+    -fx-font-family: 'Source Code Pro', monospace;
+    -fx-alignment: CENTER;
+    -fx-text-fill: #FFFFFF;
+}
+
+.basicTextField
+{
+    -fx-border-style: none;
+    -fx-border-color: #a6acaf;
+    -fx-border-radius: 0;
+    -fx-background-insets: 0,0,0;
+    -fx-background-radius: 0,0,0;
+    -fx-padding: 16;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-maxWidth:  256;
+}

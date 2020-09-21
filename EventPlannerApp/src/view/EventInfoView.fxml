@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<ScrollPane fx:id="rootPane" prefHeight="720" prefWidth="1280" styleClass="rootPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewmodel.EventInfoViewModel">
+    <stylesheets>
+        <URL value="@/design/Style.css"/>
+    </stylesheets>
+    <content>
+    <VBox>
+        <children>
+            <VBox styleClass="topBar" >
+                <children>
+                    <Label styleClass="h1">Event Information</Label>
+                    <VBox>
+                        <children>
+                            <Button styleClass="basicButton" fx:id="homeBtn">
+                                <graphic>
+                                  <ImageView fitHeight="32.0" fitWidth="32.0" preserveRatio="true">
+                                    <image>
+                                      <Image url="img/baseline_home_black_18dp.png" />
+                                    </image>
+                                  </ImageView>
+                                </graphic>
+                            </Button>
+                        </children>
+                    </VBox>
+                </children>
+            </VBox>
+        <VBox>
+            <children>
+                <Label styleClass="h2" fx:id="evtNameLbl">Event Name</Label>
+                <VBox maxWidth="512" maxHeight="512" >
+                    <children>
+                        <WebView fx:id="webView" prefWidth="512" prefHeight="512"></WebView>
+                    </children>
+                </VBox>
+                <Label styleClass="h3" fx:id="evtDescrLbl">Event Description</Label>
+                <Label styleClass="h3" fx:id="evtDateLbl">00.00.0000</Label>
+                <Label styleClass="h3" fx:id="evtLocationLbl">Location Name</Label>
+                <Button styleClass="basicButtonDark" fx:id="editEventBtn">Edit Event</Button>
+                <Button styleClass="basicButtonDark" fx:id="inviteBtn">Invite People</Button>
+                <Button styleClass="basicButtonDark" fx:id="deleteBtn">Delete</Button>
+            </children>
+        </VBox>
+        </children>
+    </VBox>
+    </content>
+</ScrollPane>
